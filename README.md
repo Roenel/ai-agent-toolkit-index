@@ -1,4 +1,4 @@
-# AI Skill Library
+# AI Agent Toolkit Index
 
 A point-in-time catalog of **184** agent skills, harnesses, MCP servers, frameworks, and related tools, each scored for safety, popularity, and usefulness.
 
@@ -6,7 +6,7 @@ Snapshot date: **2026-11-10** (America/New_York). Stars, releases, licenses, and
 
 This is a **read-only review of public sources**, not a security audit, penetration test, or guarantee of safety, quality, or fitness for a particular purpose. Ratings and flags record what was observed in public repositories and vendor documentation at the time of the snapshot, with the evidence noted on each entry. Projects change quickly; re-check a repo before you install it.
 
-An interactive companion Page (filters, cards, and the same scores) is at [the AI Skill Library canvas](https://cursor.com/canvas/store-a0421101-7af2-4e7f-b327-4f9a0a3c0f49/39b4ad7b-14d8-431c-9667-9042381315c0).
+An interactive companion Page (filters, cards, and the same scores) is at [the AI Agent Toolkit Index Page](https://cursor.com/canvas/store-a0421101-7af2-4e7f-b327-4f9a0a3c0f49/39b4ad7b-14d8-431c-9667-9042381315c0).
 
 ## At a glance
 

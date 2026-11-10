@@ -2,7 +2,7 @@
 
 # Official-source additions
 
-Contributor research notes for the AI Skill Library.
+Contributor research notes for the AI Agent Toolkit Index.
 
 Summary: 37 new entries (none in the 129-entry canvas or the existing catalog skip list), split A) official company skill packs/workflows, B) memory & context, C) observability/tracing, D) methodologies, prompt and harness libraries. All repo URLs checked via GitHub API + HTTP 200 on 2026-11-10 ~08:10 ET; stars/license/last-commit straight from the GitHub API. Read-only: README/SKILL/install files fetched as raw text only; nothing installed or run.
 

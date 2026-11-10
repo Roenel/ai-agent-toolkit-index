@@ -2,7 +2,7 @@
 
 # Harness and official plugin review
 
-Contributor research notes for the AI Skill Library.
+Contributor research notes for the AI Agent Toolkit Index.
 
 **Pulled:** Tue Nov 10, 2026 ~8:00 AM ET · **Method:** read-only (`gh api repos/...` + `commits/<default>`, WebFetch of vendor docs). Nothing installed or run.
 **Rules:** Maintainer counts as "verified" only when the GitHub org is official and the vendor docs/site link to it (or the reverse). Commit dates are the latest default-branch commit, converted to ET. License is GitHub's SPDX; anything null or mismatched is flagged. Anything I couldn't confirm is marked **Unknown**.
