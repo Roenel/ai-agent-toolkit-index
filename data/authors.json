@@ -1,0 +1,978 @@
+[
+  {
+    "github_owner": "addyosmani",
+    "name": "Addy Osmani",
+    "kind": "Person",
+    "profile": "Long-time Google Chrome engineering lead and author of books on JavaScript patterns; his GitHub bio now reads Member of Technical Staff at Anthropic. 55k GitHub followers.",
+    "x": "https://x.com/addyosmani",
+    "github": "https://github.com/addyosmani"
+  },
+  {
+    "github_owner": "agentsmd",
+    "name": "AGENTS.md project",
+    "kind": "Project",
+    "profile": "Org behind the AGENTS.md format and agents.md site; has a technical charter. Identity beyond the site is UNVERIFIED.",
+    "x": null,
+    "github": "https://github.com/agentsmd"
+  },
+  {
+    "github_owner": "OthmanAdi",
+    "name": "Ahmad Othman Ammar Adi",
+    "kind": "Person",
+    "profile": "Educator and developer at migRaven (per GitHub). Small track record outside this repo.",
+    "x": null,
+    "github": "https://github.com/OthmanAdi"
+  },
+  {
+    "github_owner": "Aider-AI",
+    "name": "Aider AI",
+    "kind": "Project",
+    "profile": "Org for Aider, the terminal pair-programmer created by Paul Gauthier in 2023; one of the earliest open-source coding agents and home of the widely cited Aider LLM coding leaderboards.",
+    "x": null,
+    "github": "https://github.com/Aider-AI"
+  },
+  {
+    "github_owner": "thedotmack",
+    "name": "Alex Newman",
+    "kind": "Person",
+    "profile": "Developer (GitHub since 2011) whose X handle is @Claude_Memory. Little other verifiable history.",
+    "x": "https://x.com/Claude_Memory",
+    "github": "https://github.com/thedotmack"
+  },
+  {
+    "github_owner": "alirezarezvani",
+    "name": "Alireza Rezvani",
+    "kind": "Person",
+    "profile": "CTO in HealthTech at Lindera (Berlin), per GitHub. Prolific single maintainer of a very large skill set.",
+    "x": "https://x.com/RezaRezvaniBln",
+    "github": "https://github.com/alirezarezvani"
+  },
+  {
+    "github_owner": "aws",
+    "name": "Amazon Web Services",
+    "kind": "Company",
+    "profile": "AWS's main official GitHub org (verified domain).",
+    "x": null,
+    "github": "https://github.com/aws"
+  },
+  {
+    "github_owner": "ampcode",
+    "name": "Amp",
+    "kind": "Company",
+    "profile": "Amp (ampcode.com), the agent CLI and IDE extension spun out of Sourcegraph; X @AmpCode linked from GitHub.",
+    "x": "https://x.com/AmpCode",
+    "github": "https://github.com/ampcode"
+  },
+  {
+    "github_owner": "anomalyco",
+    "name": "Anomaly",
+    "kind": "Company",
+    "profile": "The team formerly known as SST (sst/opencode redirects here); also builds OpenTUI and models.dev.",
+    "x": "https://x.com/anomalyco",
+    "github": "https://github.com/anomalyco"
+  },
+  {
+    "github_owner": "anthropics",
+    "name": "Anthropic",
+    "kind": "Company",
+    "profile": "AI lab that makes Claude, Claude Code and the Agent Skills and MCP standards. Official repos here are first-party.",
+    "x": null,
+    "github": "https://github.com/anthropics"
+  },
+  {
+    "github_owner": "Arize-ai",
+    "name": "Arize AI",
+    "kind": "Company",
+    "profile": "Venture-backed ML/LLM observability company.",
+    "x": "https://x.com/arizeai",
+    "github": "https://github.com/Arize-ai"
+  },
+  {
+    "github_owner": "assafelovic",
+    "name": "Assaf Elovic",
+    "kind": "Person",
+    "profile": "Co-founder of Tavily, the search API for agents (per GitHub). GPT Researcher is his long-running flagship project.",
+    "x": "https://x.com/assaf_elovic",
+    "github": "https://github.com/assafelovic"
+  },
+  {
+    "github_owner": "atlassian",
+    "name": "Atlassian",
+    "kind": "Company",
+    "profile": "Atlassian's official org (Jira, Confluence).",
+    "x": null,
+    "github": "https://github.com/atlassian"
+  },
+  {
+    "github_owner": "awslabs",
+    "name": "AWS Labs",
+    "kind": "Company",
+    "profile": "Amazon Web Services' open-source labs org.",
+    "x": null,
+    "github": "https://github.com/awslabs"
+  },
+  {
+    "github_owner": "basicmachines-co",
+    "name": "Basic Machines",
+    "kind": "Company",
+    "profile": "Small company behind Basic Memory (basicmachines.co), which also sells a hosted tier; about 70 GitHub followers.",
+    "x": null,
+    "github": "https://github.com/basicmachines-co"
+  },
+  {
+    "github_owner": "BloopAI",
+    "name": "Bloop AI",
+    "kind": "Company",
+    "profile": "YC-backed startup (bloop code search, Vibe Kanban). Vibe Kanban is sunsetting per README.",
+    "x": null,
+    "github": "https://github.com/BloopAI"
+  },
+  {
+    "github_owner": "bmad-code-org",
+    "name": "BMad Code",
+    "kind": "Company",
+    "profile": "Org for Brian 'BMad' Madison's BMad Method (bmadcode.com); community-driven, created 2025.",
+    "x": null,
+    "github": "https://github.com/bmad-code-org"
+  },
+  {
+    "github_owner": "browser-use",
+    "name": "Browser Use",
+    "kind": "Company",
+    "profile": "YC-backed startup (2024) behind the Browser Use agent and cloud.",
+    "x": "https://x.com/browser_use",
+    "github": "https://github.com/browser-use"
+  },
+  {
+    "github_owner": "browserbase",
+    "name": "Browserbase",
+    "kind": "Company",
+    "profile": "Venture-backed startup offering headless browser infrastructure for agents; makers of Stagehand.",
+    "x": "https://x.com/browserbase",
+    "github": "https://github.com/browserbase"
+  },
+  {
+    "github_owner": "callstackincubator",
+    "name": "Callstack",
+    "kind": "Company",
+    "profile": "Well-known React Native consultancy and core contributor to the RN ecosystem; this is its incubator org.",
+    "x": null,
+    "github": "https://github.com/callstackincubator"
+  },
+  {
+    "github_owner": "charmbracelet",
+    "name": "Charm",
+    "kind": "Company",
+    "profile": "Charm builds popular Go terminal tools and libraries (Bubble Tea, Lip Gloss, Glow, Gum); about 16.5k GitHub followers, X @charmcli. Crush is its coding agent.",
+    "x": "https://x.com/charmcli",
+    "github": "https://github.com/charmbracelet"
+  },
+  {
+    "github_owner": "ChromeDevTools",
+    "name": "Chrome DevTools team",
+    "kind": "Company",
+    "profile": "Google's Chrome DevTools team org.",
+    "x": null,
+    "github": "https://github.com/ChromeDevTools"
+  },
+  {
+    "github_owner": "cisco-ai-defense",
+    "name": "Cisco AI Defense",
+    "kind": "Company",
+    "profile": "Cisco's AI security unit (from the Robust Intelligence acquisition).",
+    "x": null,
+    "github": "https://github.com/cisco-ai-defense"
+  },
+  {
+    "github_owner": "ClickHouse",
+    "name": "ClickHouse",
+    "kind": "Company",
+    "profile": "ClickHouse Inc., maker of the ClickHouse analytics database.",
+    "x": "https://x.com/ClickHouseDB",
+    "github": "https://github.com/ClickHouse"
+  },
+  {
+    "github_owner": "cline",
+    "name": "Cline",
+    "kind": "Company",
+    "profile": "Venture-backed company behind the Cline coding agent.",
+    "x": null,
+    "github": "https://github.com/cline"
+  },
+  {
+    "github_owner": "cloudflare",
+    "name": "Cloudflare",
+    "kind": "Company",
+    "profile": "Major network, security and edge-compute company; publishes the Agents SDK and remote MCP servers. Strong security track record.",
+    "x": null,
+    "github": "https://github.com/cloudflare"
+  },
+  {
+    "github_owner": "comet-ml",
+    "name": "Comet",
+    "kind": "Company",
+    "profile": "Comet, an ML experiment-tracking and evaluation company active since 2017; X @Cometml linked from GitHub.",
+    "x": "https://x.com/Cometml",
+    "github": "https://github.com/comet-ml"
+  },
+  {
+    "github_owner": "ComposioHQ",
+    "name": "Composio",
+    "kind": "Company",
+    "profile": "Venture-backed agent-integrations platform; its lists also promote its own gateway.",
+    "x": "https://x.com/composio",
+    "github": "https://github.com/ComposioHQ"
+  },
+  {
+    "github_owner": "confident-ai",
+    "name": "Confident AI",
+    "kind": "Company",
+    "profile": "YC-backed LLM evaluation startup behind DeepEval.",
+    "x": null,
+    "github": "https://github.com/confident-ai"
+  },
+  {
+    "github_owner": "containers",
+    "name": "containers org / Marc Nuri",
+    "kind": "Project",
+    "profile": "Open org for container tools (Podman, Buildah). The Kubernetes MCP server's creator and top contributor is Marc Nuri, Senior Principal Engineer at Red Hat (per his GitHub).",
+    "x": null,
+    "github": "https://github.com/containers"
+  },
+  {
+    "github_owner": "continuedev",
+    "name": "Continue",
+    "kind": "Company",
+    "profile": "Continue (continue.dev), maker of the open-source Continue coding assistant; status changed after a mid-2026 acquisition, details unverified.",
+    "x": "https://x.com/continuedev",
+    "github": "https://github.com/continuedev"
+  },
+  {
+    "github_owner": "coreyhaines31",
+    "name": "Corey Haines",
+    "kind": "Person",
+    "profile": "SaaS marketer turned founder (Swipe Files, Conversion Factory agency), per GitHub. Well-known in bootstrapper marketing circles.",
+    "x": "https://x.com/coreyhainesco",
+    "github": "https://github.com/coreyhaines31"
+  },
+  {
+    "github_owner": "trycua",
+    "name": "Cua",
+    "kind": "Company",
+    "profile": "YC-backed startup building computer-use agent infrastructure (sandboxes, Lume VMs, benchmarks).",
+    "x": "https://x.com/trycua",
+    "github": "https://github.com/trycua"
+  },
+  {
+    "github_owner": "cursor",
+    "name": "Cursor (Anysphere)",
+    "kind": "Company",
+    "profile": "Maker of the Cursor AI code editor. The plugins repo is maintained by Cursor staff; pstack inside it is by Lauren Tan (poteto), a Cursor engineer.",
+    "x": null,
+    "github": "https://github.com/cursor"
+  },
+  {
+    "github_owner": "dagger",
+    "name": "Dagger",
+    "kind": "Company",
+    "profile": "Company founded by Solomon Hykes, creator of Docker; builds the Dagger CI engine.",
+    "x": "https://x.com/dagger_io",
+    "github": "https://github.com/dagger"
+  },
+  {
+    "github_owner": "davila7",
+    "name": "Daniel Avila",
+    "kind": "Person",
+    "profile": "Developer building AI dev tools (danielavila.me). Runs aitmpl.com catalog.",
+    "x": "https://x.com/dani_avila7",
+    "github": "https://github.com/davila7"
+  },
+  {
+    "github_owner": "dbt-labs",
+    "name": "dbt Labs",
+    "kind": "Company",
+    "profile": "Company behind dbt, the standard SQL transformation tool.",
+    "x": null,
+    "github": "https://github.com/dbt-labs"
+  },
+  {
+    "github_owner": "docker",
+    "name": "Docker",
+    "kind": "Company",
+    "profile": "Docker Inc.'s official org.",
+    "x": "https://x.com/docker",
+    "github": "https://github.com/docker"
+  },
+  {
+    "github_owner": "docling-project",
+    "name": "Docling Project",
+    "kind": "Project",
+    "profile": "Open-source project started at IBM Research Zurich (README credits IBM); uses IBM Granite-Docling models.",
+    "x": null,
+    "github": "https://github.com/docling-project"
+  },
+  {
+    "github_owner": "e2b-dev",
+    "name": "E2B",
+    "kind": "Company",
+    "profile": "Venture-backed sandbox infrastructure startup for agents, widely used by AI labs and agent products.",
+    "x": "https://x.com/e2b",
+    "github": "https://github.com/e2b-dev"
+  },
+  {
+    "github_owner": "earendil-works",
+    "name": "Earendil Works",
+    "kind": "Company",
+    "profile": "Company behind Pi; package author is Mario Zechner (creator of libGDX). New contributors' PRs are auto-closed by policy.",
+    "x": null,
+    "github": "https://github.com/earendil-works"
+  },
+  {
+    "github_owner": "elastic",
+    "name": "Elastic",
+    "kind": "Company",
+    "profile": "Elastic, the company behind Elasticsearch and Kibana (elastic.co).",
+    "x": null,
+    "github": "https://github.com/elastic"
+  },
+  {
+    "github_owner": "expo",
+    "name": "Expo",
+    "kind": "Company",
+    "profile": "Maker of the Expo framework and EAS for React Native apps.",
+    "x": "https://x.com/expo",
+    "github": "https://github.com/expo"
+  },
+  {
+    "github_owner": "firebase",
+    "name": "Firebase",
+    "kind": "Company",
+    "profile": "Google's Firebase team (firebase.google.com).",
+    "x": null,
+    "github": "https://github.com/firebase"
+  },
+  {
+    "github_owner": "firecrawl",
+    "name": "Firecrawl",
+    "kind": "Company",
+    "profile": "YC-backed web-scraping-for-AI startup (formerly Mendable).",
+    "x": "https://x.com/firecrawl",
+    "github": "https://github.com/firecrawl"
+  },
+  {
+    "github_owner": "Fission-AI",
+    "name": "Fission",
+    "kind": "Company",
+    "profile": "Small company behind OpenSpec (org created 2025); maintainer promotes it on X as @0xTab (unverified link to the org).",
+    "x": null,
+    "github": "https://github.com/Fission-AI"
+  },
+  {
+    "github_owner": "punkpeye",
+    "name": "Frank Fiegel",
+    "kind": "Person",
+    "profile": "Founder of Glama (MCP directory and gateway), per GitHub. Runs the most-starred MCP list.",
+    "x": "https://x.com/punkpeye",
+    "github": "https://github.com/punkpeye"
+  },
+  {
+    "github_owner": "garrytan",
+    "name": "Garry Tan",
+    "kind": "Person",
+    "profile": "President and CEO of Y Combinator (per his README and GitHub), previously co-founder of Initialized Capital and an early Palantir designer. gstack is his personal workflow, not a YC product.",
+    "x": "https://x.com/garrytan",
+    "github": "https://github.com/garrytan"
+  },
+  {
+    "github_owner": "gastownhall",
+    "name": "Gas Town Hall (Steve Yegge)",
+    "kind": "Person",
+    "profile": "Community org for Steve Yegge's Gas Town agent orchestrator; steveyegge/beads redirects here. Yegge is a well-known ex-Amazon/Google engineer and writer, formerly at Sourcegraph.",
+    "x": "https://x.com/gastownhall",
+    "github": "https://github.com/gastownhall"
+  },
+  {
+    "github_owner": "github",
+    "name": "GitHub",
+    "kind": "Company",
+    "profile": "GitHub (Microsoft). Official repos for Copilot, the GitHub MCP server, Spec Kit and Agentic Workflows.",
+    "x": null,
+    "github": "https://github.com/github"
+  },
+  {
+    "github_owner": "google",
+    "name": "Google",
+    "kind": "Company",
+    "profile": "Google's main open-source GitHub org (verified; opensource.google).",
+    "x": "https://x.com/GoogleOSS",
+    "github": "https://github.com/google"
+  },
+  {
+    "github_owner": "google-antigravity",
+    "name": "Google (Antigravity)",
+    "kind": "Company",
+    "profile": "Google's Antigravity agent-harness org; README links antigravity.google docs.",
+    "x": null,
+    "github": "https://github.com/google-antigravity"
+  },
+  {
+    "github_owner": "google-gemini",
+    "name": "Google (Gemini)",
+    "kind": "Company",
+    "profile": "Google's official Gemini developer org.",
+    "x": "https://x.com/googleaidevs",
+    "github": "https://github.com/google-gemini"
+  },
+  {
+    "github_owner": "googleapis",
+    "name": "Google APIs",
+    "kind": "Company",
+    "profile": "Google's official org for API clients and tools.",
+    "x": null,
+    "github": "https://github.com/googleapis"
+  },
+  {
+    "github_owner": "googleworkspace",
+    "name": "Google Workspace (developer org)",
+    "kind": "Company",
+    "profile": "Google Workspace developer relations org; the gws README states it is not an officially supported Google product.",
+    "x": "https://x.com/workspacedevs",
+    "github": "https://github.com/googleworkspace"
+  },
+  {
+    "github_owner": "aaif-goose",
+    "name": "goose (Agentic AI Foundation)",
+    "kind": "Project",
+    "profile": "goose was created at Block and moved to the Agentic AI Foundation (AAIF) org; block/goose redirects here.",
+    "x": null,
+    "github": "https://github.com/aaif-goose"
+  },
+  {
+    "github_owner": "grafana",
+    "name": "Grafana Labs",
+    "kind": "Company",
+    "profile": "Company behind Grafana, Loki, Tempo and Mimir.",
+    "x": "https://x.com/grafana",
+    "github": "https://github.com/grafana"
+  },
+  {
+    "github_owner": "hashicorp",
+    "name": "HashiCorp",
+    "kind": "Company",
+    "profile": "Maker of Terraform and Vault (now part of IBM).",
+    "x": null,
+    "github": "https://github.com/hashicorp"
+  },
+  {
+    "github_owner": "Helicone",
+    "name": "Helicone",
+    "kind": "Company",
+    "profile": "Helicone (helicone.ai), an LLMOps and AI-gateway company; X @helicone_ai linked from GitHub.",
+    "x": "https://x.com/helicone_ai",
+    "github": "https://github.com/Helicone"
+  },
+  {
+    "github_owner": "hesreallyhim",
+    "name": "hesreallyhim",
+    "kind": "Person",
+    "profile": "Pseudonymous maintainer (org affiliation: reponomics). Identity unverified; the list itself is long-running and moderated.",
+    "x": null,
+    "github": "https://github.com/hesreallyhim"
+  },
+  {
+    "github_owner": "huggingface",
+    "name": "Hugging Face",
+    "kind": "Company",
+    "profile": "Central hub for open models and datasets; official skills.",
+    "x": "https://x.com/huggingface",
+    "github": "https://github.com/huggingface"
+  },
+  {
+    "github_owner": "humanlayer",
+    "name": "HumanLayer",
+    "kind": "Company",
+    "profile": "YC-backed startup founded by Dex Horthy, author of 12-Factor Agents.",
+    "x": null,
+    "github": "https://github.com/humanlayer"
+  },
+  {
+    "github_owner": "obra",
+    "name": "Jesse Vincent",
+    "kind": "Person",
+    "profile": "Long-time open-source developer (creator of Request Tracker, co-founder of Keyboardio), now at Prime Radiant per GitHub. Superpowers is one of the most adopted skill methodologies and is in Anthropic's plugin directory.",
+    "x": null,
+    "github": "https://github.com/obra"
+  },
+  {
+    "github_owner": "K-Dense-AI",
+    "name": "K-Dense",
+    "kind": "Company",
+    "profile": "Young startup (org created 2025) building AI co-scientist tools; reputation still forming.",
+    "x": "https://x.com/k_dense_ai",
+    "github": "https://github.com/K-Dense-AI"
+  },
+  {
+    "github_owner": "Kilo-Org",
+    "name": "Kilo Code",
+    "kind": "Company",
+    "profile": "Company behind Kilo Code (kilo.ai), created March 2025; the repo has 1,200+ contributors and X @kilocode is linked from GitHub.",
+    "x": "https://x.com/kilocode",
+    "github": "https://github.com/Kilo-Org"
+  },
+  {
+    "github_owner": "lmnr-ai",
+    "name": "Laminar",
+    "kind": "Company",
+    "profile": "Laminar (lmnr.ai), a small agent-observability startup; the GitHub org links no site or X account, so details beyond the repo are unverified.",
+    "x": null,
+    "github": "https://github.com/lmnr-ai"
+  },
+  {
+    "github_owner": "langchain-ai",
+    "name": "LangChain",
+    "kind": "Company",
+    "profile": "Company behind LangChain, LangGraph and LangSmith.",
+    "x": "https://x.com/LangChain",
+    "github": "https://github.com/langchain-ai"
+  },
+  {
+    "github_owner": "langfuse",
+    "name": "Langfuse",
+    "kind": "Company",
+    "profile": "YC-backed open-source LLM observability company.",
+    "x": "https://x.com/langfuse",
+    "github": "https://github.com/langfuse"
+  },
+  {
+    "github_owner": "Leonxlnx",
+    "name": "Leon Lin",
+    "kind": "Person",
+    "profile": "Design-focused builder with about 34k X followers (@LexnLin, linked from GitHub). Real and active, but the repo's star growth is unusually fast.",
+    "x": "https://x.com/lexnlin",
+    "github": "https://github.com/Leonxlnx"
+  },
+  {
+    "github_owner": "letta-ai",
+    "name": "Letta",
+    "kind": "Company",
+    "profile": "Letta, the company built from the MemGPT research project at UC Berkeley; X @letta_ai linked from GitHub.",
+    "x": "https://x.com/letta_ai",
+    "github": "https://github.com/letta-ai"
+  },
+  {
+    "github_owner": "mattpocock",
+    "name": "Matt Pocock",
+    "kind": "Person",
+    "profile": "TypeScript educator behind Total TypeScript and AI Hero, ex-Vercel and XState core team. Large newsletter and X audience; known for practical, well-explained tooling.",
+    "x": "https://x.com/mattpocockuk",
+    "github": "https://github.com/mattpocock"
+  },
+  {
+    "github_owner": "mem0ai",
+    "name": "Mem0",
+    "kind": "Company",
+    "profile": "Mem0 (mem0.ai), a startup focused on a memory layer for agents; X @mem0ai linked from GitHub.",
+    "x": "https://x.com/mem0ai",
+    "github": "https://github.com/mem0ai"
+  },
+  {
+    "github_owner": "meta-llama",
+    "name": "Meta Llama",
+    "kind": "Company",
+    "profile": "Meta's official Llama org.",
+    "x": null,
+    "github": "https://github.com/meta-llama"
+  },
+  {
+    "github_owner": "michael-denyer",
+    "name": "Michael Denyer",
+    "kind": "Person",
+    "profile": "Software engineer and bioinformatician at Wisdom Panel (per GitHub). Small following; maintains a pstack port.",
+    "x": null,
+    "github": "https://github.com/michael-denyer"
+  },
+  {
+    "github_owner": "backnotprop",
+    "name": "Michael Ramos",
+    "kind": "Person",
+    "profile": "Engineer (backnotprop.com) who sponsors Plannotator and wrote the 'bro' skill later folded into pstack. Mirror maintainer, not the pstack author.",
+    "x": "https://x.com/backnotprop",
+    "github": "https://github.com/backnotprop"
+  },
+  {
+    "github_owner": "microsoft",
+    "name": "Microsoft",
+    "kind": "Company",
+    "profile": "Official Microsoft open-source org (133k followers). Projects here range from flagship (Playwright, MarkItDown) to experimental.",
+    "x": "https://x.com/OpenAtMicrosoft",
+    "github": "https://github.com/microsoft"
+  },
+  {
+    "github_owner": "modelcontextprotocol",
+    "name": "Model Context Protocol",
+    "kind": "Project",
+    "profile": "The MCP steering group's official org (protocol spec, SDKs, reference servers, registry).",
+    "x": null,
+    "github": "https://github.com/modelcontextprotocol"
+  },
+  {
+    "github_owner": "motherduckdb",
+    "name": "MotherDuck",
+    "kind": "Company",
+    "profile": "Venture-backed company commercializing DuckDB in the cloud.",
+    "x": "https://x.com/motherduck",
+    "github": "https://github.com/motherduckdb"
+  },
+  {
+    "github_owner": "muratcankoylan",
+    "name": "Muratcan Koylan",
+    "kind": "Person",
+    "profile": "AI engineer writing about context engineering (muratcankoylan.com). Modest following; the repo grew via X attention.",
+    "x": null,
+    "github": "https://github.com/muratcankoylan"
+  },
+  {
+    "github_owner": "neondatabase",
+    "name": "Neon",
+    "kind": "Company",
+    "profile": "Serverless Postgres company, now part of Databricks per its README.",
+    "x": "https://x.com/neondatabase",
+    "github": "https://github.com/neondatabase"
+  },
+  {
+    "github_owner": "nextlevelbuilder",
+    "name": "Next Level Builder",
+    "kind": "Company",
+    "profile": "Small studio (org created 2025) that promotes several of its own products; no verifiable track record beyond these repos.",
+    "x": "https://x.com/nlb_io",
+    "github": "https://github.com/nextlevelbuilder"
+  },
+  {
+    "github_owner": "sickn33",
+    "name": "Nick (sickn33)",
+    "kind": "Person",
+    "profile": "Runs aaskills.tech. GitHub bio contains a pump.fun-style crypto token address, a common sign of token promotion; identity otherwise unverified.",
+    "x": "https://x.com/sickn33",
+    "github": "https://github.com/sickn33"
+  },
+  {
+    "github_owner": "nizos",
+    "name": "Nizar Selander",
+    "kind": "Person",
+    "profile": "Sweden-based software engineer; creator of TDD Guard and Probity, tools for disciplined agentic development, featured on the Modern Software Engineering channel.",
+    "x": null,
+    "github": "https://github.com/nizos"
+  },
+  {
+    "github_owner": "makenotion",
+    "name": "Notion",
+    "kind": "Company",
+    "profile": "Notion Labs' official org.",
+    "x": "https://x.com/notionhq",
+    "github": "https://github.com/makenotion"
+  },
+  {
+    "github_owner": "NVIDIA",
+    "name": "NVIDIA",
+    "kind": "Company",
+    "profile": "GPU and AI computing company; official org.",
+    "x": null,
+    "github": "https://github.com/NVIDIA"
+  },
+  {
+    "github_owner": "NVIDIA-NeMo",
+    "name": "NVIDIA NeMo",
+    "kind": "Company",
+    "profile": "NVIDIA's NeMo framework org (guardrails, training, agents).",
+    "x": null,
+    "github": "https://github.com/NVIDIA-NeMo"
+  },
+  {
+    "github_owner": "openai",
+    "name": "OpenAI",
+    "kind": "Company",
+    "profile": "AI lab behind GPT models, ChatGPT and Codex. Official repos; promptfoo is also now part of OpenAI.",
+    "x": null,
+    "github": "https://github.com/openai"
+  },
+  {
+    "github_owner": "openclaw",
+    "name": "OpenClaw",
+    "kind": "Project",
+    "profile": "Open-source personal assistant project started by Peter Steinberger (formerly Clawdbot/Moltbot). Very fast growth; its marketplace had malware incidents.",
+    "x": "https://x.com/openclaw",
+    "github": "https://github.com/openclaw"
+  },
+  {
+    "github_owner": "OpenHands",
+    "name": "OpenHands",
+    "kind": "Project",
+    "profile": "Org for OpenHands (formerly OpenDevin), one of the most-used open coding-agent platforms, run by the All Hands AI team; site openhands.dev.",
+    "x": null,
+    "github": "https://github.com/OpenHands"
+  },
+  {
+    "github_owner": "oraios",
+    "name": "Oraios AI",
+    "kind": "Company",
+    "profile": "Small German AI consultancy (oraios-ai.de); Serena is its best-known project.",
+    "x": null,
+    "github": "https://github.com/oraios"
+  },
+  {
+    "github_owner": "PrefectHQ",
+    "name": "Prefect",
+    "kind": "Company",
+    "profile": "Workflow-orchestration company; FastMCP v1 was folded into the official MCP Python SDK.",
+    "x": "https://x.com/PrefectIO",
+    "github": "https://github.com/PrefectHQ"
+  },
+  {
+    "github_owner": "promptfoo",
+    "name": "promptfoo",
+    "kind": "Company",
+    "profile": "Eval and red-teaming startup now part of OpenAI (per README); widely used in industry.",
+    "x": "https://x.com/promptfoo",
+    "github": "https://github.com/promptfoo"
+  },
+  {
+    "github_owner": "pydantic",
+    "name": "Pydantic",
+    "kind": "Company",
+    "profile": "The team behind Pydantic, Pydantic AI and Logfire (pydantic.dev); verified org.",
+    "x": "https://x.com/pydantic",
+    "github": "https://github.com/pydantic"
+  },
+  {
+    "github_owner": "QwenLM",
+    "name": "Qwen (Alibaba Cloud)",
+    "kind": "Company",
+    "profile": "Official org of Alibaba Cloud's Qwen model team; about 20k GitHub followers, X @Alibaba_Qwen linked from GitHub.",
+    "x": "https://x.com/Alibaba_Qwen",
+    "github": "https://github.com/QwenLM"
+  },
+  {
+    "github_owner": "remotion-dev",
+    "name": "Remotion",
+    "kind": "Company",
+    "profile": "Small company behind Remotion, the React framework for programmatic video (source-available license).",
+    "x": "https://x.com/remotion",
+    "github": "https://github.com/remotion-dev"
+  },
+  {
+    "github_owner": "czlonkowski",
+    "name": "Romuald Czlonkowski",
+    "kind": "Person",
+    "profile": "Founder of AiAdvisors, an n8n automation consultancy in Poland (per GitHub). Repos double as marketing for his services.",
+    "x": "https://x.com/romualdcz",
+    "github": "https://github.com/czlonkowski"
+  },
+  {
+    "github_owner": "ruvnet",
+    "name": "rUv (Reuven Cohen)",
+    "kind": "Person",
+    "profile": "Prolific AI builder and early cloud-computing entrepreneur; bio reads 'Unicorn Breeder'. Projects are ambitious and heavily marketed.",
+    "x": "https://x.com/ruv",
+    "github": "https://github.com/ruvnet"
+  },
+  {
+    "github_owner": "ccusage",
+    "name": "ryoppippi",
+    "kind": "Person",
+    "profile": "Japanese OSS developer (@ryoppippi, 8k X followers) who created ccusage; ryoppippi/ccusage redirects to this org.",
+    "x": null,
+    "github": "https://github.com/ccusage"
+  },
+  {
+    "github_owner": "getsentry",
+    "name": "Sentry",
+    "kind": "Company",
+    "profile": "Application monitoring company; these are skills its own engineers use.",
+    "x": "https://x.com/sentry",
+    "github": "https://github.com/getsentry"
+  },
+  {
+    "github_owner": "wshobson",
+    "name": "Seth Hobson",
+    "kind": "Person",
+    "profile": "Senior Applied AI Engineer at United Data Technologies and founder of Major 7 Apps (per GitHub). Maintains one of the largest Claude Code agent/plugin collections.",
+    "x": null,
+    "github": "https://github.com/wshobson"
+  },
+  {
+    "github_owner": "shadcn-ui",
+    "name": "shadcn",
+    "kind": "Person",
+    "profile": "shadcn (works at Vercel) maintains shadcn/ui, one of the most used React UI projects.",
+    "x": null,
+    "github": "https://github.com/shadcn-ui"
+  },
+  {
+    "github_owner": "simonw",
+    "name": "Simon Willison",
+    "kind": "Person",
+    "profile": "Co-creator of Django and creator of Datasette; one of the most trusted independent voices on LLM tooling (simonwillison.net).",
+    "x": "https://x.com/simonw",
+    "github": "https://github.com/simonw"
+  },
+  {
+    "github_owner": "smtg-ai",
+    "name": "smtg-ai",
+    "kind": "Company",
+    "profile": "Small org (54 followers, no public profile). Maintainer identity unverified.",
+    "x": null,
+    "github": "https://github.com/smtg-ai"
+  },
+  {
+    "github_owner": "snyk",
+    "name": "Snyk",
+    "kind": "Company",
+    "profile": "Major developer-security company; acquired Invariant Labs, the original mcp-scan authors.",
+    "x": null,
+    "github": "https://github.com/snyk"
+  },
+  {
+    "github_owner": "stanfordnlp",
+    "name": "Stanford NLP",
+    "kind": "Project",
+    "profile": "Stanford NLP Group's GitHub org (nlp.stanford.edu); home of DSPy. Author details UNVERIFIED this pass.",
+    "x": "https://x.com/stanfordnlp",
+    "github": "https://github.com/stanfordnlp"
+  },
+  {
+    "github_owner": "kepano",
+    "name": "Steph Ango",
+    "kind": "Person",
+    "profile": "CEO of Obsidian (GitHub company: Obsidian) and creator of Obsidian Web Clipper and Defuddle. Well-known for 'file over app' writing; small, careful projects.",
+    "x": "https://x.com/kepano",
+    "github": "https://github.com/kepano"
+  },
+  {
+    "github_owner": "strands-agents",
+    "name": "Strands Agents (AWS)",
+    "kind": "Company",
+    "profile": "AWS's Strands Agents team; the org is not GitHub-verified, but Agent SOPs were announced on the AWS Open Source Blog by James Hood and Nicholas Clegg.",
+    "x": null,
+    "github": "https://github.com/strands-agents"
+  },
+  {
+    "github_owner": "stripe",
+    "name": "Stripe",
+    "kind": "Company",
+    "profile": "Payments company; official agent tooling repo.",
+    "x": "https://x.com/StripeDev",
+    "github": "https://github.com/stripe"
+  },
+  {
+    "github_owner": "supabase",
+    "name": "Supabase",
+    "kind": "Company",
+    "profile": "Open-source Postgres development platform; official skills and MCP server.",
+    "x": "https://x.com/supabase",
+    "github": "https://github.com/supabase"
+  },
+  {
+    "github_owner": "Tencent",
+    "name": "Tencent",
+    "kind": "Company",
+    "profile": "Tencent's official open-source org; A.I.G is from its Zhuque security lab.",
+    "x": null,
+    "github": "https://github.com/Tencent"
+  },
+  {
+    "github_owner": "t3dotgg",
+    "name": "Theo Browne",
+    "kind": "Person",
+    "profile": "CEO of Ping.gg (per GitHub), creator of the T3 stack and T3 Chat, and a large developer YouTuber/streamer. Opinions are strong and very public, so his tools are heavily scrutinized.",
+    "x": "https://x.com/theo",
+    "github": "https://github.com/t3dotgg"
+  },
+  {
+    "github_owner": "topoteretes",
+    "name": "Topoteretes",
+    "kind": "Company",
+    "profile": "Company behind the cognee memory platform (topoteretes.com); X @cognee_ linked from GitHub.",
+    "x": "https://x.com/cognee_",
+    "github": "https://github.com/topoteretes"
+  },
+  {
+    "github_owner": "traceloop",
+    "name": "Traceloop (ServiceNow)",
+    "kind": "Company",
+    "profile": "Traceloop, an LLM observability company whose GitHub org now reads 'from ServiceNow'; its OpenLLMetry conventions were adopted into OpenTelemetry. X @traceloopdev.",
+    "x": "https://x.com/traceloopdev",
+    "github": "https://github.com/traceloop"
+  },
+  {
+    "github_owner": "trailofbits",
+    "name": "Trail of Bits",
+    "kind": "Company",
+    "profile": "One of the best-known security research and audit firms (blockchain, cryptography, AI security). High trust for security tooling.",
+    "x": "https://x.com/trailofbits",
+    "github": "https://github.com/trailofbits"
+  },
+  {
+    "github_owner": "travisvn",
+    "name": "Travis Van Nimwegen",
+    "kind": "Person",
+    "profile": "Independent engineer (travis.engineer). Little public track record beyond this list; nothing negative found.",
+    "x": "https://x.com/Travis_Engineer",
+    "github": "https://github.com/travisvn"
+  },
+  {
+    "github_owner": "UKGovernmentBEIS",
+    "name": "UK AI Security Institute",
+    "kind": "Government",
+    "profile": "UK government AI Security Institute (hosted under the BEIS org). Inspect is a reference eval framework for AI safety labs.",
+    "x": null,
+    "github": "https://github.com/UKGovernmentBEIS"
+  },
+  {
+    "github_owner": "upstash",
+    "name": "Upstash",
+    "kind": "Company",
+    "profile": "Serverless data company (Redis, Vector, QStash); Context7 is its docs-for-agents product.",
+    "x": "https://x.com/upstash",
+    "github": "https://github.com/upstash"
+  },
+  {
+    "github_owner": "vercel-labs",
+    "name": "Vercel Labs",
+    "kind": "Company",
+    "profile": "Vercel's experimental org (makers of Next.js). agent-browser is led by Chris Tate (@ctatedev); skills.sh CLI lives here too.",
+    "x": "https://x.com/vercel",
+    "github": "https://github.com/vercel-labs"
+  },
+  {
+    "github_owner": "VoltAgent",
+    "name": "VoltAgent",
+    "kind": "Company",
+    "profile": "Company behind an open-source TypeScript agent framework (org created 2025).",
+    "x": "https://x.com/voltagent_dev",
+    "github": "https://github.com/VoltAgent"
+  },
+  {
+    "github_owner": "wandb",
+    "name": "Weights & Biases",
+    "kind": "Company",
+    "profile": "Weights & Biases (wandb.ai), ML experiment tracking and the Weave tracing tool; verified org.",
+    "x": "https://x.com/wandb",
+    "github": "https://github.com/wandb"
+  },
+  {
+    "github_owner": "xai-org",
+    "name": "xAI",
+    "kind": "Company",
+    "profile": "xAI's official GitHub org (x.ai), maker of Grok; about 13.9k GitHub followers.",
+    "x": "https://x.com/SpaceXSI",
+    "github": "https://github.com/xai-org"
+  },
+  {
+    "github_owner": "getzep",
+    "name": "Zep",
+    "kind": "Company",
+    "profile": "Zep (getzep.com), a context and memory company for agents; X @zep_ai linked from GitHub.",
+    "x": "https://x.com/zep_ai",
+    "github": "https://github.com/getzep"
+  }
+]

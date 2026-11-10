@@ -1,0 +1,987 @@
+{
+  "types": {
+    "SK": "Skills & skill packs",
+    "WF": "Workflows & methodologies",
+    "HA": "Agent harnesses & CLIs",
+    "FW": "Agent frameworks & SDKs",
+    "MCP": "MCP servers",
+    "INF": "MCP & agent infra / gateways",
+    "SB": "Sandboxes & runtimes",
+    "BR": "Browser & computer use",
+    "EV": "Evals & testing",
+    "SEC": "Agent security & guardrails",
+    "CI": "CI & GitHub agents",
+    "MEM": "Memory & context",
+    "OBS": "Observability & cost",
+    "PR": "Prompt & subagent libraries",
+    "DIR": "Directories & awesome lists",
+    "GD": "Guides, specs & starters",
+    "TL": "Dev tools & agent ops"
+  },
+  "type_descriptions": {
+    "SK": "SKILL.md packs and plugins that teach an agent a domain or task",
+    "WF": "Methods and process packs: spec-driven, planning, TDD, review loops",
+    "HA": "Agents you run: terminal and IDE coding agents",
+    "FW": "Libraries and SDKs for building your own agents",
+    "MCP": "Servers that give agents tools or data over MCP",
+    "INF": "Gateways, registries and frameworks for building and running MCP and tools",
+    "SB": "Isolated environments where agent code runs",
+    "BR": "Browser and desktop control for agents",
+    "EV": "Evals, testing and skill measurement",
+    "SEC": "Scanners, red-teaming, guardrails and hardening configs",
+    "CI": "Agents that run in GitHub Actions and CI",
+    "MEM": "Long-term memory, knowledge graphs and session recall",
+    "OBS": "Tracing, cost and transcript tooling",
+    "PR": "Prompt, SOP and subagent collections",
+    "DIR": "Awesome lists, registries and marketplaces",
+    "GD": "Guides, open specs and starter code",
+    "TL": "Runners, installers and agent ops tools"
+  },
+  "type_slugs": {
+    "SK": "skills-and-skill-packs",
+    "WF": "workflows-and-methodologies",
+    "HA": "agent-harnesses-and-clis",
+    "FW": "agent-frameworks-and-sdks",
+    "MCP": "mcp-servers",
+    "INF": "mcp-and-agent-infra",
+    "SB": "sandboxes-and-runtimes",
+    "BR": "browser-and-computer-use",
+    "EV": "evals-and-testing",
+    "SEC": "agent-security-and-guardrails",
+    "CI": "ci-and-github-agents",
+    "MEM": "memory-and-context",
+    "OBS": "observability-and-cost",
+    "PR": "prompt-and-subagent-libraries",
+    "DIR": "directories-and-awesome-lists",
+    "GD": "guides-specs-and-starters",
+    "TL": "dev-tools-and-agent-ops"
+  },
+  "clusters": [
+    {
+      "id": "vendor",
+      "name": "Vendor terminal agents",
+      "members": [
+        "openai/codex",
+        "anthropics/claude-code",
+        "google-gemini/gemini-cli",
+        "google-antigravity/antigravity-cli",
+        "xai-org/grok-build",
+        "QwenLM/qwen-code"
+      ],
+      "recommended": "openai/codex",
+      "reason": "Reference harness: Apache-2.0 source and the safest defaults (OS sandbox on, network off, OTel off). Claude Code has the richest plugin ecosystem but is proprietary and starts in auto mode"
+    },
+    {
+      "id": "open",
+      "name": "Open, model-agnostic terminal agents (OpenCode lineage)",
+      "members": [
+        "anomalyco/opencode",
+        "Kilo-Org/kilocode",
+        "earendil-works/pi",
+        "aaif-goose/goose",
+        "charmbracelet/crush",
+        "Aider-AI/aider"
+      ],
+      "recommended": "anomalyco/opencode",
+      "reason": "Upstream, MIT, and --auto is opt-in; Kilo CLI is a fork of it, and Goose defaults to auto with no sandbox"
+    },
+    {
+      "id": "ide",
+      "name": "Cline family (IDE agents)",
+      "members": [
+        "cline/cline",
+        "Kilo-Org/kilocode",
+        "continuedev/continue"
+      ],
+      "recommended": "cline/cline",
+      "reason": "Original upstream and actively maintained; Roo Code is archived (shut down 15 May 2026, excluded), Zoo Code is a community fork, Continue's status is unclear. Turn off CLI auto-approve and telemetry"
+    },
+    {
+      "id": "google",
+      "name": "Google pair: Gemini CLI vs Antigravity",
+      "members": [
+        "google-gemini/gemini-cli",
+        "google-antigravity/antigravity-cli",
+        "google-antigravity/antigravity-sdk-python"
+      ],
+      "recommended": "google-gemini/gemini-cli",
+      "reason": "Open source (Apache-2.0) with documented defaults; Antigravity has no license and collects interactions data by default"
+    },
+    {
+      "id": "ref",
+      "name": "Skill format and official reference skills",
+      "members": [
+        "anthropics/skills",
+        "openai/plugins",
+        "openai/skills",
+        "google-gemini/gemini-skills",
+        "cline/skills",
+        "ampcode/official-plugins",
+        "vercel-labs/agent-skills",
+        "anthropics/knowledge-work-plugins"
+      ],
+      "recommended": "anthropics/skills",
+      "reason": "Same SKILL.md format everywhere: anthropics/skills for the spec and examples, openai/plugins for Codex packaging; openai/skills is deprecated"
+    },
+    {
+      "id": "instr",
+      "name": "Project instructions and specs",
+      "members": [
+        "agentsmd/agents.md",
+        "cloudflare/agent-skills-discovery-rfc",
+        "trailofbits/claude-code-config"
+      ],
+      "recommended": "agentsmd/agents.md",
+      "reason": "Open spec read by Codex, Goose, Cursor and Grok; point Gemini and Claude Code at it with a one-line shim"
+    },
+    {
+      "id": "mkt",
+      "name": "Vendor plugin marketplaces",
+      "members": [
+        "anthropics/claude-plugins-official",
+        "openai/plugins",
+        "cursor/plugins",
+        "Kilo-Org/kilo-marketplace",
+        "ampcode/official-plugins"
+      ],
+      "recommended": "anthropics/claude-plugins-official",
+      "reason": "Claude plugin format is the import source; Cursor's repo already ships a .claude-plugin manifest. None pin SHAs, so vet each plugin"
+    },
+    {
+      "id": "aws",
+      "name": "AWS",
+      "members": [
+        "aws/agent-toolkit-for-aws",
+        "awslabs/agent-plugins",
+        "awslabs/mcp"
+      ],
+      "recommended": "aws/agent-toolkit-for-aws",
+      "reason": "Current official bundle; it supersedes awslabs/mcp. Scope IAM read-only first"
+    },
+    {
+      "id": "learn",
+      "name": "Anthropic learning resources",
+      "members": [
+        "anthropics/claude-cookbooks",
+        "anthropics/claude-quickstarts"
+      ],
+      "recommended": "anthropics/claude-cookbooks",
+      "reason": "Broader and current: agent patterns, skills, memory and tracing"
+    },
+    {
+      "id": "review2",
+      "name": "Cross-model review",
+      "members": [
+        "openai/codex-plugin-cc",
+        "t3dotgg/tstack"
+      ],
+      "recommended": "openai/codex-plugin-cc",
+      "reason": "Official, one plugin, adds Codex review inside Claude Code; tstack's council does three-model review"
+    },
+    {
+      "id": "eng",
+      "name": "Engineering skill packs (pstack family and peers)",
+      "members": [
+        "cursor/plugins",
+        "backnotprop/pstack",
+        "michael-denyer/pstack-claude",
+        "obra/superpowers",
+        "addyosmani/agent-skills",
+        "garrytan/gstack",
+        "t3dotgg/tstack",
+        "mattpocock/skills",
+        "muratcankoylan/Agent-Skills-for-Context-Engineering"
+      ],
+      "recommended": "obra/superpowers",
+      "reason": "Most complete spec-to-TDD-to-review loop, works across harnesses, Safe; use pstack via cursor/plugins if you are in Cursor"
+    },
+    {
+      "id": "spec",
+      "name": "Spec-driven and planning workflows",
+      "members": [
+        "github/spec-kit",
+        "Fission-AI/OpenSpec",
+        "bmad-code-org/BMAD-METHOD",
+        "OthmanAdi/planning-with-files",
+        "strands-agents/agent-sop",
+        "humanlayer/advanced-context-engineering-for-coding-agents"
+      ],
+      "recommended": "github/spec-kit",
+      "reason": "Official GitHub, agent-agnostic, lightest path from spec to plan to tasks; ACE-FCA is the best short read on the method"
+    },
+    {
+      "id": "orch",
+      "name": "Parallel agents and agent control centers",
+      "members": [
+        "OpenHands/OpenHands",
+        "smtg-ai/claude-squad",
+        "BloopAI/vibe-kanban",
+        "humanlayer/humanlayer",
+        "ruvnet/ruflo",
+        "openclaw/openclaw",
+        "openai/symphony",
+        "microsoft/amplifier"
+      ],
+      "recommended": "OpenHands/OpenHands",
+      "reason": "Self-hosted, runs any ACP agent including Codex and Claude Code; Symphony is an OpenAI preview for trusted environments"
+    },
+    {
+      "id": "mem",
+      "name": "Agent memory",
+      "members": [
+        "mem0ai/mem0",
+        "letta-ai/letta-code",
+        "getzep/graphiti",
+        "topoteretes/cognee",
+        "basicmachines-co/basic-memory",
+        "langchain-ai/langmem",
+        "obra/episodic-memory",
+        "letta-ai/claude-subconscious",
+        "thedotmack/claude-mem",
+        "gastownhall/beads"
+      ],
+      "recommended": "mem0ai/mem0",
+      "reason": "Simplest SDK for per-user memory in a product (set MEM0_TELEMETRY=False); Basic Memory or Episodic Memory for your own agents' local notes"
+    },
+    {
+      "id": "obs",
+      "name": "LLM tracing and observability",
+      "members": [
+        "langfuse/langfuse",
+        "Arize-ai/phoenix",
+        "comet-ml/opik",
+        "Helicone/helicone",
+        "traceloop/openllmetry",
+        "lmnr-ai/lmnr",
+        "ccusage/ccusage",
+        "pydantic/logfire",
+        "Arize-ai/openinference",
+        "langfuse/skills",
+        "wandb/skills",
+        "simonw/claude-code-transcripts"
+      ],
+      "recommended": "langfuse/langfuse",
+      "reason": "Most adopted self-hostable tracing and evals, plus official Langfuse skills to wire it in; OpenInference/OpenLLMetry if you stay on plain OTel"
+    },
+    {
+      "id": "fw",
+      "name": "Agent frameworks",
+      "members": [
+        "openai/openai-agents-python",
+        "langchain-ai/deepagents",
+        "PrefectHQ/fastmcp",
+        "anthropics/claude-quickstarts",
+        "assafelovic/gpt-researcher",
+        "anthropics/claude-agent-sdk-python",
+        "microsoft/agent-framework",
+        "huggingface/smolagents",
+        "stanfordnlp/dspy",
+        "docker/docker-agent"
+      ],
+      "recommended": "anthropics/claude-agent-sdk-python",
+      "reason": "Builds on the same agent loop you already run in Claude Code; openai-agents-python if you are on OpenAI"
+    },
+    {
+      "id": "inst",
+      "name": "Skill installers and skill tooling",
+      "members": [
+        "vercel-labs/skills",
+        "microsoft/apm",
+        "huggingface/upskill"
+      ],
+      "recommended": "microsoft/apm",
+      "reason": "Lockfile and manifest for skills plus MCP; upskill to measure whether a skill helps"
+    },
+    {
+      "id": "secrev",
+      "name": "Security review skills",
+      "members": [
+        "trailofbits/skills",
+        "cloudflare/security-audit-skill",
+        "getsentry/skills",
+        "snyk/studio-recipes"
+      ],
+      "recommended": "trailofbits/skills",
+      "reason": "Deepest audit expertise; Snyk recipes if you already use Snyk"
+    },
+    {
+      "id": "scan",
+      "name": "MCP and skill scanners",
+      "members": [
+        "cisco-ai-defense/mcp-scanner",
+        "snyk/agent-scan",
+        "Tencent/AI-Infra-Guard"
+      ],
+      "recommended": "cisco-ai-defense/mcp-scanner",
+      "reason": "Fully local static plus YARA scanning with no account; Snyk's sends data to its API"
+    },
+    {
+      "id": "red",
+      "name": "LLM red-teaming and guardrails",
+      "members": [
+        "NVIDIA/garak",
+        "microsoft/PyRIT",
+        "meta-llama/PurpleLlama",
+        "NVIDIA-NeMo/Guardrails"
+      ],
+      "recommended": "NVIDIA/garak",
+      "reason": "Broadest out-of-the-box probe set for agent endpoints; NeMo Guardrails for runtime blocking"
+    },
+    {
+      "id": "eval",
+      "name": "Eval frameworks",
+      "members": [
+        "promptfoo/promptfoo",
+        "confident-ai/deepeval",
+        "UKGovernmentBEIS/inspect_ai",
+        "modelcontextprotocol/inspector"
+      ],
+      "recommended": "promptfoo/promptfoo",
+      "reason": "YAML evals plus red-team in CI with no code; DeepEval if you want pytest-style"
+    },
+    {
+      "id": "browser",
+      "name": "Browser automation for agents",
+      "members": [
+        "microsoft/playwright-mcp",
+        "microsoft/playwright-cli",
+        "vercel-labs/agent-browser",
+        "ChromeDevTools/chrome-devtools-mcp",
+        "browserbase/stagehand",
+        "browser-use/browser-use",
+        "browserbase/skills",
+        "trycua/cua"
+      ],
+      "recommended": "vercel-labs/agent-browser",
+      "reason": "Cheapest tokens per step and runs as CLI or MCP; Playwright MCP is the safe default for MCP-only clients"
+    },
+    {
+      "id": "ci",
+      "name": "GitHub and CI agents",
+      "members": [
+        "anthropics/claude-code-action",
+        "openai/codex-action",
+        "github/gh-aw",
+        "anthropics/claude-code-security-review"
+      ],
+      "recommended": "github/gh-aw",
+      "reason": "Official GitHub, sandboxed safe-outputs model, agent-agnostic"
+    },
+    {
+      "id": "sbx",
+      "name": "Sandboxes for agent code",
+      "members": [
+        "e2b-dev/E2B",
+        "cloudflare/sandbox-sdk",
+        "dagger/container-use",
+        "docker/mcp-gateway"
+      ],
+      "recommended": "e2b-dev/E2B",
+      "reason": "Mature, SDK-first, fast VMs; container-use if you want local git-branch isolation"
+    },
+    {
+      "id": "dir",
+      "name": "Awesome lists and directories",
+      "members": [
+        "punkpeye/awesome-mcp-servers",
+        "hesreallyhim/awesome-claude-code",
+        "travisvn/awesome-claude-skills",
+        "ComposioHQ/awesome-claude-skills",
+        "VoltAgent/awesome-agent-skills",
+        "sickn33/agentic-awesome-skills",
+        "github/awesome-copilot",
+        "davila7/claude-code-templates",
+        "anthropics/claude-plugins-official",
+        "modelcontextprotocol/registry",
+        "openclaw/clawhub"
+      ],
+      "recommended": "anthropics/claude-plugins-official",
+      "reason": "Vendor-curated; community lists are for discovery only, and ClawHub is rated Avoid"
+    },
+    {
+      "id": "docs",
+      "name": "Docs and web to Markdown",
+      "members": [
+        "microsoft/markitdown",
+        "docling-project/docling",
+        "kepano/defuddle",
+        "firecrawl/firecrawl-mcp-server"
+      ],
+      "recommended": "microsoft/markitdown",
+      "reason": "Lightest, broad format support; Docling for hard PDFs"
+    },
+    {
+      "id": "pg",
+      "name": "Postgres, Supabase and Neon",
+      "members": [
+        "supabase/agent-skills",
+        "supabase/mcp",
+        "neondatabase/agent-skills"
+      ],
+      "recommended": "supabase/agent-skills",
+      "reason": "Read-only best-practice skills, no DB access needed"
+    },
+    {
+      "id": "ms",
+      "name": "Microsoft and Azure",
+      "members": [
+        "microsoft/skills",
+        "microsoft/azure-skills",
+        "microsoft/mcp"
+      ],
+      "recommended": "microsoft/mcp",
+      "reason": "Official servers; the skill packs only matter if you use Azure"
+    },
+    {
+      "id": "n8n",
+      "name": "n8n",
+      "members": [
+        "czlonkowski/n8n-skills",
+        "czlonkowski/n8n-mcp"
+      ],
+      "recommended": "czlonkowski/n8n-mcp",
+      "reason": "Same author; the MCP server carries the node docs, skills complement it"
+    },
+    {
+      "id": "design",
+      "name": "Design and UI taste skills",
+      "members": [
+        "shadcn-ui/ui",
+        "nextlevelbuilder/ui-ux-pro-max-skill",
+        "Leonxlnx/taste-skill"
+      ],
+      "recommended": "shadcn-ui/ui",
+      "reason": "Real components and registry; the two skills have unusual star growth"
+    },
+    {
+      "id": "dbmcp",
+      "name": "Database and analytics MCP servers",
+      "members": [
+        "googleapis/mcp-toolbox",
+        "motherduckdb/mcp-server-motherduck",
+        "ClickHouse/mcp-clickhouse",
+        "dbt-labs/dbt-mcp"
+      ],
+      "recommended": "googleapis/mcp-toolbox",
+      "reason": "Official Google, one server for Postgres, BigQuery, Spanner and more"
+    },
+    {
+      "id": "inframcp",
+      "name": "Cloud and infra MCP servers",
+      "members": [
+        "cloudflare/mcp-server-cloudflare",
+        "hashicorp/terraform-mcp-server",
+        "containers/kubernetes-mcp-server",
+        "grafana/mcp-grafana",
+        "awslabs/mcp"
+      ],
+      "recommended": "cloudflare/mcp-server-cloudflare",
+      "reason": "Official remote servers with OAuth, nothing to host; awslabs/mcp is superseded"
+    },
+    {
+      "id": "saasmcp",
+      "name": "Work-app MCP servers",
+      "members": [
+        "github/github-mcp-server",
+        "atlassian/atlassian-mcp-server",
+        "makenotion/notion-mcp-server",
+        "ComposioHQ/composio"
+      ],
+      "recommended": "github/github-mcp-server",
+      "reason": "Official and central to a many-PR workflow; Notion's local server is unmaintained (use its hosted MCP)"
+    }
+  ],
+  "duplicates": [
+    {
+      "repo": "cursor/plugins (pstack)",
+      "overlaps_with": "backnotprop/pstack",
+      "identical_skill_md": 43,
+      "meaning": "Mirror: same pstack skills, kept in sync for non-Cursor users. Install one."
+    },
+    {
+      "repo": "microsoft/skills",
+      "overlaps_with": "microsoft/azure-skills",
+      "identical_skill_md": 54,
+      "meaning": "Near-duplicate: the Azure pack repackages Microsoft's skills. Pick by whether you need Azure deploy skills."
+    },
+    {
+      "repo": "cursor/plugins (pstack)",
+      "overlaps_with": "michael-denyer/pstack-claude",
+      "identical_skill_md": 5,
+      "meaning": "Port: a few pstack skills verbatim, the rest adapted with policy forks."
+    },
+    {
+      "repo": "davila7/claude-code-templates",
+      "overlaps_with": "ComposioHQ/awesome-claude-skills",
+      "identical_skill_md": 17,
+      "meaning": "Directories copying each other's bundled skills."
+    },
+    {
+      "repo": "davila7/claude-code-templates",
+      "overlaps_with": "anthropics/skills",
+      "identical_skill_md": 12,
+      "meaning": "Directory re-bundles official Anthropic skills; get them from the source."
+    },
+    {
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "overlaps_with": "anthropics/skills",
+      "identical_skill_md": 5,
+      "meaning": "Same: copies of official skills inside a list."
+    },
+    {
+      "repo": "davila7/claude-code-templates",
+      "overlaps_with": "openai/skills",
+      "identical_skill_md": 3,
+      "meaning": "Copies of OpenAI's (now deprecated) skills."
+    },
+    {
+      "repo": "snyk/agent-scan",
+      "overlaps_with": "anthropics/skills",
+      "identical_skill_md": 5,
+      "meaning": "Test fixtures only (skills it scans), not a competing pack."
+    },
+    {
+      "repo": "czlonkowski/n8n-mcp",
+      "overlaps_with": "czlonkowski/n8n-skills",
+      "identical_skill_md": 2,
+      "meaning": "Same author ships the skills in both repos; complementary."
+    },
+    {
+      "repo": "Kilo-Org/kilocode",
+      "overlaps_with": "anomalyco/opencode",
+      "identical_skill_md": 1,
+      "meaning": "Fork: Kilo CLI is built from OpenCode."
+    },
+    {
+      "repo": "QwenLM/qwen-code",
+      "overlaps_with": "google-gemini/gemini-cli",
+      "identical_skill_md": 0,
+      "meaning": "Fork of Gemini CLI v0.8.2; stopped syncing upstream."
+    },
+    {
+      "repo": "aws/agent-toolkit-for-aws",
+      "overlaps_with": "awslabs/mcp",
+      "identical_skill_md": 0,
+      "meaning": "Successor: the toolkit supersedes awslabs/mcp."
+    },
+    {
+      "repo": "openai/plugins",
+      "overlaps_with": "openai/skills",
+      "identical_skill_md": 0,
+      "meaning": "Successor: openai/skills is deprecated in favor of openai/plugins."
+    },
+    {
+      "repo": "letta-ai/letta-code",
+      "overlaps_with": "letta-ai/letta",
+      "identical_skill_md": 0,
+      "meaning": "letta-ai/letta is now a pointer repo; Letta Code replaces it (old entry removed)."
+    },
+    {
+      "repo": "nizos/probity",
+      "overlaps_with": "nizos/tdd-guard",
+      "identical_skill_md": 0,
+      "meaning": "Same author; Probity supersedes TDD Guard."
+    }
+  ],
+  "safety_flags": [
+    {
+      "flag": "Telemetry on by default",
+      "entry": "Claude Code",
+      "observed_default": "Metrics telemetry on with the Claude API",
+      "opt_out": "DISABLE_TELEMETRY=1",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Telemetry on by default",
+      "entry": "Cline",
+      "observed_default": "Telemetry on",
+      "opt_out": "telemetryOptOut: true",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Telemetry on by default",
+      "entry": "Gemini CLI",
+      "observed_default": "Anonymized usage statistics on",
+      "opt_out": "privacy.usageStatisticsEnabled: false",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Telemetry on by default",
+      "entry": "Antigravity CLI",
+      "observed_default": "Interactions data collected",
+      "opt_out": "Opt out in settings (per README)",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Telemetry on by default",
+      "entry": "Aider",
+      "observed_default": "Analytics opt-in is asked of a random subset; --yes-always accepts it",
+      "opt_out": "--analytics-disable",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Telemetry on by default",
+      "entry": "Amp (not a catalog entry; closed source)",
+      "observed_default": "Threads sync to ampcode.com; auto-updates on",
+      "opt_out": "amp.updates.mode; telemetry opt-out unknown",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Telemetry on by default",
+      "entry": "Mem0",
+      "observed_default": "PostHog telemetry in SDK and CLI",
+      "opt_out": "MEM0_TELEMETRY=False",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Telemetry on by default",
+      "entry": "Agents CLI (ADK)",
+      "observed_default": "One usage signal per command",
+      "opt_out": "AGENTS_CLI_TELEMETRY=0",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Telemetry on by default",
+      "entry": "Docker Agent",
+      "observed_default": "Usage telemetry",
+      "opt_out": "Documented opt-out in Docker Agent docs",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Telemetry on by default",
+      "entry": "Graphiti",
+      "observed_default": "Anonymous telemetry with a UUID in ~/.cache/graphiti",
+      "opt_out": "GRAPHITI_TELEMETRY_ENABLED=false",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Telemetry on by default",
+      "entry": "Opik",
+      "observed_default": "Anonymous usage reports",
+      "opt_out": "OPIK_USAGE_REPORT_ENABLED=false",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Telemetry on by default",
+      "entry": "Microsoft Agent Framework",
+      "observed_default": "Feature-usage bitmask in the User-Agent",
+      "opt_out": "AGENT_FRAMEWORK_USER_AGENT_DISABLED or AGENT_FRAMEWORK_FEATURE_MASK_DISABLED",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Cloud upload",
+      "entry": "Claude Subconscious",
+      "observed_default": "Every Claude Code transcript goes to Letta cloud; a background agent reads files and searches the web",
+      "opt_out": "Self-host Letta and set LETTA_BASE_URL",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Cloud upload",
+      "entry": "Letta Code",
+      "observed_default": "Agents run against api.letta.com",
+      "opt_out": "Run `letta server` and self-host",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Cloud upload",
+      "entry": "Logfire SDK",
+      "observed_default": "Default destination is Logfire cloud",
+      "opt_out": "Export to your own OTel backend",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Cloud upload",
+      "entry": "OpenLLMetry",
+      "observed_default": "Traceloop SDK sends to Traceloop cloud when a key is set",
+      "opt_out": "Point the exporter at your own OTel endpoint",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Cloud upload",
+      "entry": "Codex plugin for Claude Code",
+      "observed_default": "Code is sent to OpenAI for review",
+      "opt_out": "Inherent; use only on code you can share with OpenAI",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Cloud upload",
+      "entry": "Claude Plugins Official",
+      "observed_default": "Marketplace is auto-added to Claude Code",
+      "opt_out": "CLAUDE_CODE_DISABLE_OFFICIAL_MARKETPLACE_AUTOINSTALL",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "curl|bash installer",
+      "entry": "Agent Plugins for AWS",
+      "observed_default": "aws-transform skill runs an awsstatic.com install.sh | bash; HyperPod scripts pipe base64 to bash on nodes",
+      "opt_out": "Install the CLI yourself after reading the script",
+      "source": "Contributor review and pattern scan"
+    },
+    {
+      "flag": "curl|bash installer",
+      "entry": "Agent Toolkit for AWS",
+      "observed_default": "A skill suggests the astral.sh uv curl|sh installer; signing-in skill offers to run aws login",
+      "opt_out": "Install uv yourself; scope IAM read-only",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "curl|bash installer",
+      "entry": "Gemini skills",
+      "observed_default": "gemini-api-cli skill pipes a raw.githubusercontent.com install.sh to bash",
+      "opt_out": "Install the CLI yourself",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "curl|bash installer",
+      "entry": "OpenAI Plugins (Codex)",
+      "observed_default": "Some partner plugins run third-party curl|sh or irm|iex installers (e.g. boltz-api-cli)",
+      "opt_out": "Vet each plugin before enabling",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "curl|bash installer",
+      "entry": "Trail of Bits Claude Code config",
+      "observed_default": "rustup and LM Studio curl|sh installers",
+      "opt_out": "Install those tools yourself",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "curl|bash installer",
+      "entry": "Amplifier",
+      "observed_default": "uv curl|sh and irm|iex in the install path",
+      "opt_out": "Install uv yourself",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "curl|bash installer",
+      "entry": "Antigravity CLI",
+      "observed_default": "Binary installed via a curl script; no source or license",
+      "opt_out": "Read the script first",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Auto-approve / yolo",
+      "entry": "Goose",
+      "observed_default": "GOOSE_MODE defaults to auto (fully autonomous)",
+      "opt_out": "GOOSE_MODE=approve or smart_approve",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Auto-approve / yolo",
+      "entry": "Cline",
+      "observed_default": "CLI --auto-approve defaults to true; no shell allow/deny list",
+      "opt_out": "--auto-approve=false or ACP mode; block commands with a PreToolUse hook; keep extension YOLO off",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Auto-approve / yolo",
+      "entry": "Claude Code",
+      "observed_default": "Interactive sessions start in auto mode (classifier) on v2.1.283+",
+      "opt_out": "Set permissions.defaultMode to default",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Auto-approve / yolo",
+      "entry": "Amp (not a catalog entry; closed source)",
+      "observed_default": "Allow-all when no permissions are set; unmatched MCP servers allowed",
+      "opt_out": "Configure permission rules (cited from search, not fetched directly)",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Auto-approve / yolo",
+      "entry": "Cursor CLI (not a catalog entry; closed source)",
+      "observed_default": "-p has write and shell access; --yolo/--force plus --trust runs unattended",
+      "opt_out": "Avoid --force and --trust; use --sandbox enabled",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Auto-approve / yolo",
+      "entry": "Aider",
+      "observed_default": "--yes-always confirms every prompt",
+      "opt_out": "Don't pass --yes-always",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Auto-approve / yolo",
+      "entry": "OpenCode",
+      "observed_default": "run --auto approves anything not denied; serve can bind 0.0.0.0",
+      "opt_out": "Don't pass --auto; bind to localhost",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Auto-approve / yolo",
+      "entry": "Codex CLI",
+      "observed_default": "--yolo removes sandbox and approvals (opt-in)",
+      "opt_out": "Default is safe; don't pass --yolo",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Auto-approve / yolo",
+      "entry": "Trail of Bits Claude Code config",
+      "observed_default": "Recommends a claude-yolo alias (--dangerously-skip-permissions) inside its sandbox",
+      "opt_out": "Use only inside that sandbox",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Auto-approve / yolo",
+      "entry": "Docker Agent",
+      "observed_default": "--yolo / autoApprove mode available",
+      "opt_out": "Leave it off",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Sandbox off by default",
+      "entry": "Grok Build",
+      "observed_default": "No sandbox; --yolo always approves",
+      "opt_out": "Enable the sandbox (docs.x.ai/build/features/sandbox)",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Sandbox off by default",
+      "entry": "Gemini CLI",
+      "observed_default": "Sandbox off unless --yolo",
+      "opt_out": "Run with --sandbox; set security.disableYoloMode",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Sandbox off by default",
+      "entry": "Claude Code",
+      "observed_default": "Bash sandbox is opt-in",
+      "opt_out": "Turn on the sandbox in settings",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Sandbox off by default",
+      "entry": "Goose",
+      "observed_default": "Approval policy only, no OS sandbox",
+      "opt_out": "Run in a container or VM",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Sandbox off by default",
+      "entry": "Pi",
+      "observed_default": "Core defaults unknown",
+      "opt_out": "Run in a container (pi.dev docs)",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Model-code execution",
+      "entry": "smolagents",
+      "observed_default": "CodeAgent runs model-written Python",
+      "opt_out": "Use a remote or sandboxed executor (E2B, Docker)",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Model-code execution",
+      "entry": "Symphony",
+      "observed_default": "Autonomous agents act on repos; preview for trusted environments",
+      "opt_out": "Run in an isolated environment",
+      "source": "Contributor review of vendor docs"
+    },
+    {
+      "flag": "Model-code execution",
+      "entry": "Episodic Memory",
+      "observed_default": "npm postinstall runs a local script",
+      "opt_out": "Review the script; install from the plugin",
+      "source": "Contributor review of vendor docs"
+    }
+  ],
+  "starter_stacks": [
+    {
+      "name": "Solo founder shipping agent products",
+      "blurb": "Write code, ship PRs, test in a real browser and evaluate agents in CI.",
+      "repos": [
+        "openai/codex",
+        "github/github-mcp-server",
+        "upstash/context7",
+        "vercel-labs/agent-browser",
+        "promptfoo/promptfoo"
+      ]
+    },
+    {
+      "name": "Security reviewer",
+      "blurb": "Audit code, review PRs for vulnerabilities, scan agent tooling and red-team model endpoints.",
+      "repos": [
+        "trailofbits/skills",
+        "cisco-ai-defense/mcp-scanner",
+        "NVIDIA/garak",
+        "anthropics/claude-code-security-review"
+      ]
+    },
+    {
+      "name": "Agent builder",
+      "blurb": "Build, debug, trace and add memory to your own agents and MCP servers.",
+      "repos": [
+        "anthropics/claude-agent-sdk-python",
+        "modelcontextprotocol/inspector",
+        "PrefectHQ/fastmcp",
+        "langfuse/langfuse",
+        "mem0ai/mem0"
+      ]
+    },
+    {
+      "name": "Data and analytics",
+      "blurb": "Give agents controlled database and file access, and turn documents into Markdown.",
+      "repos": [
+        "microsoft/markitdown",
+        "googleapis/mcp-toolbox",
+        "motherduckdb/mcp-server-motherduck",
+        "dbt-labs/dbt-mcp"
+      ]
+    },
+    {
+      "name": "Frontend and design",
+      "blurb": "Build UI from real components and check it in a real browser.",
+      "repos": [
+        "microsoft/playwright-mcp",
+        "vercel-labs/agent-skills",
+        "ChromeDevTools/chrome-devtools-mcp",
+        "shadcn-ui/ui"
+      ]
+    },
+    {
+      "name": "DevOps and CI",
+      "blurb": "Run agents safely in CI and let them read cloud and infrastructure state.",
+      "repos": [
+        "github/gh-aw",
+        "docker/mcp-gateway",
+        "anthropics/claude-code-action",
+        "cloudflare/mcp-server-cloudflare",
+        "hashicorp/terraform-mcp-server"
+      ]
+    }
+  ],
+  "scoring": {
+    "overall": "Impact (30) + Quality (20) + Adoption (15) + Ease (15) + Safety (20)",
+    "avoid_cap": 20,
+    "adoption_stars_max_points": 6,
+    "tiers": {
+      "S": {
+        "range": "90-100",
+        "meaning": "Adopt now"
+      },
+      "A": {
+        "range": "80-89",
+        "meaning": "Strong pick; adopt when the need comes up"
+      },
+      "B": {
+        "range": "70-79",
+        "meaning": "Good in the right stack or with care"
+      },
+      "C": {
+        "range": "55-69",
+        "meaning": "Situational, stale or risky; read first"
+      },
+      "D": {
+        "range": "under 55",
+        "meaning": "Skip, or use only as a reference"
+      }
+    },
+    "ratings": [
+      "Safe",
+      "Use with care",
+      "Avoid"
+    ],
+    "snapshot_timezone": "America/New_York"
+  }
+}
